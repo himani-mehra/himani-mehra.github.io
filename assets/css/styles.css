@@ -160,6 +160,11 @@ img {
   font-weight: 100;
   font-size: 50px;
 }
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    font-size: 30px;
+  }
+}
 
 .nav__toggle {
   color: var(--second-color);
@@ -201,7 +206,8 @@ img {
 
 .home__title-color {
   color: var(--first-color);
-  font-family:'Mr Dafoe' ;
+  font-family:'Mr Dafoe';
+  font-weight: 100;
 }
 
 .home__social {
