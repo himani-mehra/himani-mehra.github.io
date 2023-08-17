@@ -178,7 +178,6 @@ img {
   cursor: pointer;
 }
 
-/*Active menu*/
 .active::after {
   position: absolute;
   content: '';
@@ -188,13 +187,9 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
-
-/*=== Show menu ===*/
 .show {
   right: 0;
 }
-
-/*===== HOME =====*/
 .home {
   position: relative;
   row-gap: 5rem;
@@ -246,15 +241,11 @@ img {
 .home__blob-img {
   width: 480px;
   position: absolute;
-  /* Allows for centering using top, bottom, left, right */
   top: 50%;
-  /* Centers the image vertically */
   left: 50%;
-  /* Centers the image horizontally */
   transform: translate(-11%, -19%);
 }
 
-/*BUTTONS*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
