@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -30,7 +31,9 @@
 }
 
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -45,7 +48,9 @@ body {
   color: var(--second-color);
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -68,7 +73,7 @@ img {
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
-  color:black;
+  color: black;
   margin-top: var(--mb-2);
   margin-bottom: var(--mb-4);
   text-align: center;
@@ -155,11 +160,12 @@ img {
 }
 
 .nav__logo {
-  font-family:'Mr Dafoe' ;
+  font-family: 'Mr Dafoe';
   color: black;
   font-weight: 100;
   font-size: 50px;
 }
+
 @media screen and (max-width: 767px) {
   .nav__logo {
     font-size: 30px;
@@ -206,7 +212,7 @@ img {
 
 .home__title-color {
   color: var(--first-color);
-  font-family:'Mr Dafoe';
+  font-family: 'Mr Dafoe';
   font-weight: 100;
 }
 
@@ -239,10 +245,13 @@ img {
 
 .home__blob-img {
   width: 480px;
-  position: absolute; /* Allows for centering using top, bottom, left, right */
-  top: 50%; /* Centers the image vertically */
-  left: 50%; /* Centers the image horizontally */
-  transform: translate(-11%, -19%); 
+  position: absolute;
+  /* Allows for centering using top, bottom, left, right */
+  top: 50%;
+  /* Centers the image vertically */
+  left: 50%;
+  /* Centers the image horizontally */
+  transform: translate(-11%, -19%);
 }
 
 /*BUTTONS*/
@@ -277,11 +286,13 @@ img {
 .work__img img:hover {
   transform: scale(1.1);
 }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
     row-gap: 2rem;
   }
+
   .home__img {
     width: 200px;
   }
@@ -291,20 +302,24 @@ img {
   .home {
     padding: 4rem 0 2rem;
   }
+
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
+
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
+
   .home__img {
     width: 300px;
     bottom: 25%;
   }
+
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -316,41 +331,82 @@ img {
   body {
     margin: 0;
   }
+
   .section {
     padding-top: 4rem;
     padding-bottom: 3rem;
   }
+
   .section-title {
     margin-bottom: var(--mb-6);
   }
+
   .section-title::after {
     width: 80px;
     top: 3rem;
   }
+
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     display: flex;
     padding-top: 0;
   }
+
+  .down-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  .hidden {
+
+    display: none;
+
+  }
+
+  .arrow {
+    width: 30px;
+    height: 30px;
+    border: solid #333;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    margin-bottom: 5px;
+    transition: transform 0.3s, box-shadow 0.9s;
+  }
+
+  .arrow:hover {
+    border-width: 0 6px 6px 0;
+    color: rgb(78, 63, 63);
+  }
+
   .nav__item {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .nav__link {
     color: var(--second-color);
   }
+
   .home {
     padding: 8rem 0 2rem;
   }
+
   .home__img {
     width: 400px;
     bottom: 10%;
   }
+
   .work__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
@@ -362,9 +418,11 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
   .home {
     padding: 10rem 0 5rem;
   }
+
   .home__img {
     width: 450px;
   }
