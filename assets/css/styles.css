@@ -346,21 +346,24 @@ img {
     padding-top: 0;
   }
 
-  .down-arrow {
+  @keyframes blink {
+    0%, 100% {
+        border-color: goldenrod;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+.down-arrow {
     position: fixed;
     bottom: 20px;
-    left: 50%;
+    right: 1%;
     transform: translateX(-50%);
     cursor: pointer;
-  }
+}
 
-  .hidden {
-
-    display: none;
-
-  }
-
-  .arrow {
+.arrow {
     width: 30px;
     height: 30px;
     border: solid #333;
@@ -368,12 +371,17 @@ img {
     display: inline-block;
     transform: rotate(45deg);
     margin-bottom: 5px;
+    animation: blink 1.5s infinite;
     transition: transform 0.3s, box-shadow 0.9s;
-  }
+}
+
 
   .arrow:hover {
     border-width: 0 6px 6px 0;
     color: rgb(78, 63, 63);
+  }
+  .hidden {
+    display: none;
   }
 
   .nav__item {

@@ -34,3 +34,13 @@ scrollDownEl.addEventListener("click" , ()=> {
 const targetEl = document.getElementById('scroll-down')
 targetEl.classList.add('hidden')
 })
+
+function handleScroll() {
+    var arrow = document.getElementById("scroll-down");
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        arrow.style.display = "none";
+    } else {
+        arrow.style.display = "block";
+    }
+}
+window.addEventListener("scroll", handleScroll);
