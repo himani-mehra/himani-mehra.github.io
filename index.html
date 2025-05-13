@@ -1,80 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="assets\img\fav-icon.png" >
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets\img\fav-icon.png">
 
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mr+Dafoe">
-        <title>Himani Mehra</title>
-    </head>
-    <body>
-        <main class="l-main">
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Himani</span><br>Welcome🙏</h1>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mr+Dafoe">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
+
+    <title>Himani Mehra</title>
+</head>
+<body>
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Himani</span><br>Welcome🙏</h1>
+                <div class="resume__mobile">
+                    <a href="#" class="resume-button__mobile">
+                        <span style="margin-right: 5px;">Resume</span> <i class="bi bi-download"></i>
+                      </a>
+                      
                 </div>
-
+            </div>
+            <div class="flex__style">
+               <div class="left__social">
                 <div class="home__social">
-                    <a href="https://www.linkedin.com/in/himani-mehra/" target="blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/himani-mehra/" target="blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://gitlab.com/Himani_Mehra" target="blank" class="home__social-icon"><iconify-icon icon="ri:gitlab-fill"></iconify-icon></i></a>
-                </div>
-
+                    <a href="https://www.linkedin.com/in/himani-mehra/" target="_blank" class="home__social-icon"
+                        data-tooltip="LinkedIn">
+                        <i class='bx bxl-linkedin' style="color: black;"></i>
+                    </a>
+                    <a href="https://github.com/himani-mehra/" target="_blank" class="home__social-icon"
+                        data-tooltip="GitHub">
+                        <i class='bx bxl-github' style="color: black;"></i>
+                    </a>
+                    <a href="mailto:himani.mehra@outlook.com" class="home__social-icon" data-tooltip="Email">
+                        <i class='bx bxs-envelope' style="color: black;"></i>
+                    </a>
+                    <a href="https://gitlab.com/Himani_Mehra" target="_blank" class="home__social-icon"
+                        data-tooltip="Medium">
+                        <i class="bx bxl-medium" style="color: black;"></i>
+                    </a>
+                    <a href="https://dev.to/himanimehra" target="_blank" class="home__social-icon"
+                        data-tooltip="Dev.to">
+                        <i class="bx bxl-dev-to" style="color: black;"></i>
+                    </a>
+               </div>
+               <div class="resume-button-container">
+                <a href="#" class="resume-button"><span style="margin-right: 10px;">Resume</span> <i class="bi bi-download"></i></a>
+                
+            </div>
+            </div>
                 <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
                         <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
                         </mask>
                         <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/himani.jpg"/>
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/himani.jpg" />
                         </g>
                     </svg>
                 </div>
+            </div>
             </section>
-            <a href="#work" class="down-arrow" id="scroll-down">
-                <span class="arrow">
-                </span>
-            </a>
-            <section class="work section" id="work">
-                <h2 class="section-title">My portfolio</h2>
+            <h2 class="section-title" id="tech-task">My Dev Bucket</h2>
+        <div class="tech-stack-container">
+            <!-- Core Frontend -->
+            <div class="tech-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg"
+                    alt="React">
+                <h4>React</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg"
+                    alt="Redux">
+                <h4>Redux</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript">
+                <h4>JavaScript</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg"
+                    alt="TypeScript">
+                <h4>TypeScript</h4>
+            </div>
 
-                <div class="work__container bd-grid" id="projects">
-                    <a href="https://www.paletto.org/" target="blank" class="work__img">
-                        <img src="assets/img/work-7.png" alt="">
-                    </a>
-                    <a href="https://cursive.paletto.org/" target="blank" class="work__img">
-                        <img src="assets/img/work-8.png" alt="">
-                    </a>
-                    <a href="https://chromewebstore.google.com/detail/screenshot-pro-full-page/kkkmllcaoomjhohpmbjdffenjkidginf" target="blank" class="work__img">
-                        <img src="assets/img/work-9.png" alt="">
-                    </a>
-                    <a href="https://himani-mehra.github.io/Product-Detail-Page/" target="blank" class="work__img">
-                        <img src="assets/img/work-1.png" alt="">
-                    </a>
-                    <a href="https://himani-mehra.github.io/interactive-comment-section/" target="blank" class="work__img">
-                        <img src="assets/img/work-2.png" alt="">
-                    </a>
-                    <a href="https://himani-mehra.github.io/Multi-step-form/" target="blank" class="work__img">
-                        <img src="assets/img/work-5.png" alt="">
-                    </a>
-                    <a href="https://himani-mehra.github.io/ip-address-tracker/" target="blank" class="work__img">
-                        <img src="assets/img/work-6.png" alt="">
-                    </a>
-                    <a href="https://himani-mehra.github.io/explore-country/" target="blank" class="work__img">
-                        <img src="assets/img/work-3.png" alt="">
+            <!-- HTML & CSS -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <h4>HTML</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+
+            <!-- UI Frameworks -->
+            <div class="tech-item">
+                <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind CSS">
+                <h4>Tailwind CSS</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg"
+                    alt="Bootstrap">
+                <h4>Bootstrap</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
+                    alt="Sass">
+                <h4>Sass</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
+                    alt="Material UI">
+                <h4>Material UI</h4>
+            </div>
+
+            <!-- Alternate Frontend Frameworks -->
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+                <h4>Vue.js</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="Svelte">
+                <h4>Svelte</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="SvelteKit"
+                    style="background: white; border-radius: 5px;">
+                <h4>SvelteKit</h4>
+            </div>
+
+            <!-- API & CRUD -->
+            <div class="tech-item">
+                <img src="./assets/img/RESTful.png" alt="RESTful API">
+                <h4>RESTful API</h4>
+            </div>
+            <div class="tech-item">
+                <img src="./assets/img/crud.png" alt="CRUD Operations">
+                <h4>CRUD Operations</h4>
+            </div>
+
+            <!-- Backend & Tools -->
+            <div class="tech-item">
+                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg"
+                    alt="NodeJS">
+                <h4>NodeJS</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Git">
+                <h4>Git</h4>
+            </div>
+            <div class="tech-item">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman">
+                <h4>Postman</h4>
+            </div>
+        </div>
+
+
+
+        </div>
+        <a href="#tech-task" class="down-arrow" id="scroll-down">
+            <span class="arrow">
+            </span>
+        </a>
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid" id="projects">
+                <div class="project-card">
+                    <img src="assets/img/uber.png" alt="">
+                    <div class="project-overlay">
+                        <p class="project-title">
+                        <h1>Uber</h1>Book a ride anytime, anywhere in India! Choose your pickup and drop-off points, and
+                        let our app find the shortest route with available cabs. It even picks up your current location
+                        — no more hassle, just ride and go!</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/uber" target="_blank" class="btn">GitHub</a>
+                            <a href="https://himani-mehra.github.io/uber/" target="_blank" class="btn">Try it Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/dohe.png" alt="Dohe" />
+                    <div class="project-overlay">
+                        <p>
+                        <h1>Kabir ke dohe</h1>Explore a curated collection of Kabir's dohas and immerse yourself in the
+                        ‘Doha of the Day’ feature. Please open it on mobile to experience the audio & quiz section, read
+                        collection, and enjoy the light and dark mode for a personalized journey!</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/Kabir-ke-dohe" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="https://www.paletto.org/" target="_blank" class="btn">Try it out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/jira.png" alt="Jira Clone" />
+                    <div class="project-overlay">
+                        <h1>Jira</h1>
+                        <p>A task management tool inspired by Jira. Built with React and Tailwind, this app helps you
+                            streamline your workflow and keep track of your projects with ease. Try out the 'Create
+                            Ticket' and 'Search Task' features to experience seamless task management</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/jira" target="_blank" class="btn">GitHub</a>
+                            <a href="https://himani-mehra.github.io/jira/" target="_blank" class="btn">Try it out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/work-9.png" alt="Screenshot Pro Extension" />
+                    <div class="project-overlay">
+                        <h1>Screenshot pro</h1>
+                        <p>Capture seamless full-page screenshots in one click, trusted by 1000+ active users with a
+                            stellar 4.9⭐ rating. Try it now on Chrome!</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/SnapscreenPro" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="https://chromewebstore.google.com/detail/screenshot-pro-full-page/kkkmllcaoomjhohpmbjdffenjkidginf"
+                                target="_blank" class="btn">Try it out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/promptly.png" alt="Promptly" />
+                    <div class="project-overlay">
+                        <h1>Chat sensei</h1>
+                        <p>Generate content in seconds with AI chatbot — powered by Groq API. Just type a prompt and get
+                            instant, smart responses. </p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/ChatSensei" target="_blank" class="btn">GitHub</a>
+                            <a href="https://himani-mehra.github.io/ChatSensei/" target="_blank" class="btn">Try it
+                                out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/work-7.png" alt="Palette Picker" />
+                    <div class="project-overlay">
+                        <h1>Paletto</h1>
+                        <p><u>Color palette:</u> Upload any image or try out the samples and instantly extract its color
+                            palette in HEX, HSL, and RGB formats. Download and use the palette in your designs!</p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/color-palette" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="https://himani-mehra.github.io/color-palette/" target="_blank" class="btn">Try it
+                                out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/img/work-8.png" alt="Cursive Font Tool" />
+                    <div class="project-overlay">
+                        <h1>Digital handwriting</h1>
+                        <p>Struggling with messy handwriting in your digital notes? Make them neat, stylish, and
+                            effortlessly readable by practicing <u>digital cursive writing practice.</u></p>
+                        <div class="project-buttons">
+                            <a href="https://github.com/himani-mehra/cursive-writing" target="_blank"
+                                class="btn">GitHub</a>
+                            <a href="https://himani-mehra.github.io/cursive-writing/" target="_blank" class="btn">Try it
+                                out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <a href="https://github.com/himani-mehra" target="_blank" class="more-projects">
+                        ...and many more.
+                        <br><strong>Visit GitHub →</strong>
                     </a>
                 </div>
-            </section>
-        </main>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="assets/js/main.js"></script>
-    </body>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-icons">
+            Made with ❤️ by <a class="bold-name" href="https://www.linkedin.com/in/himani-mehra/"
+                target="_blank"><b><u>Himani</u></b></a>
+        </div>
+    </footer>   
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+<script>
+    const items = document.querySelectorAll('.tech-item');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {
+        threshold: 0.2
+    });
+
+    items.forEach(item => {
+        observer.observe(item);
+    });
+</script>
 </html>

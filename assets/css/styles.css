@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --header-height: 3rem;
   --font-semi: 600;
@@ -190,19 +193,64 @@ img {
 .show {
   right: 0;
 }
+
 .home {
   position: relative;
   row-gap: 5rem;
   padding: 4rem 0 5rem;
+  height: 100vh;
 }
 
 .home__data {
   align-self: center;
 }
 
+@media (max-width: 768px) {
+  .home {
+    position: relative;
+    row-gap: 5rem;
+    padding: 0 0 5rem;
+    height: 100vh;
+  }
+  .flex__style {
+    display: flex;
+    height: 100%;
+  }
+  .home__img {
+    transform: translateY(-65%);
+  }
+} .home__social {
+  padding-top: 0;
+  padding-bottom: 2.5rem;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ABeeZee'), local('ABeeZee-Regular'), url(http://themes.googleusercontent.com/static/fonts/abeezee/v1/JYPhMn-3Xw-JGuyB-fEdNA.ttf) format('truetype');
+}
+
+.footer {
+  color: black;
+  padding: 2rem 1rem;
+  font-family: 'ABeeZee', sans-serif;
+  text-align: center;
+}
+.bold-name {
+  color: black;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 .home__title {
   font-size: var(--big-font-size);
-  margin-bottom: var(--mb-5);
 }
 
 .home__title-color {
@@ -217,7 +265,7 @@ img {
 }
 
 .home__social-icon {
-  width: max-content;
+  /* width: max-content; */
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
@@ -237,6 +285,15 @@ img {
 .home__blob {
   fill: var(--first-color);
 }
+
+.whatsapp-button i {
+  font-size: 1.2rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1f1f1f;
+}
+
 
 .home__blob-img {
   width: 480px;
@@ -418,11 +475,245 @@ img {
     margin-right: auto;
   }
 
-  .home {
-    padding: 10rem 0 5rem;
-  }
-
   .home__img {
     width: 450px;
   }
+}
+
+.home__social-icon {
+  position: relative;
+  display: inline-block;
+}
+
+.home__social-icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  font-size: 12px;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.home__social-icon:hover::after {
+  opacity: 1;
+}
+.resume-button-container {
+  display: none;
+  margin-top: 0.75rem;
+  cursor: pointer;
+  width: 50%;
+  animation: floatUp 1s ease-out backwards;
+}
+
+@media (min-width: 768px) {
+  .resume-button-container {
+    display: block;
+  }
+}
+.resume__mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .resume__mobile {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .resume-button__mobile {
+    background-color: #4488f5;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'ABeeZee', cursive;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+
+  .resume-button__mobile:hover {
+    background-color: #4488f5
+  }}
+
+.resume-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* padding: 0.75rem 0; */
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.375rem;
+  color: white;
+  background-color: #3b82f6;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #bfdbfe;
+}
+
+@media (min-width: 768px) {
+  .resume-button {
+    padding: 1rem 0;
+    font-size: 1.125rem;
+  }
+}
+
+.tech-stack-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+  /* height: 70vh; */
+}
+
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tech-item {
+  width: 12rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.75rem;
+  padding: 0 1rem;
+  margin: 1rem;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: transform 0.3s ease, opacity 0.3s ease;  /* Consolidated transition */
+}
+
+.tech-item.visible {
+  animation: floatUp 0.6s ease-out forwards;
+}
+
+.tech-item:hover {
+  transform: scale(1.1);
+}
+
+.tech-item img {
+  width: 2.5rem;
+  flex-shrink: 0;
+}
+
+.tech-item h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.more-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #444;
+  background: #f3f4f6;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.more-projects:hover {
+  background-color: #e5e7eb;
+  transform: scale(1.1);
+  color: #5374a9;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+/* .project-card img:hover {
+  transform: scale(1.1);
+} */
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 1rem;
+  transition: opacity 0.4s ease;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.project-buttons .btn {
+  padding: 0.4rem 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.project-card:hover img {
+  transform: scale(1.1);
+  opacity: 0.3;
+  transition: 1s;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 0.8;
 }
