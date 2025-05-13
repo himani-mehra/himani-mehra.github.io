@@ -577,7 +577,7 @@ img {
   flex-wrap: wrap;
   margin-top: 2rem;
   justify-content: center;
-  /* height: 70vh; */
+  height: 70vh;
 }
 
 @keyframes floatUp {
@@ -706,6 +706,11 @@ img {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
+}
+.project-buttons .btn:hover {
+  color: white;
+  background-color: #2d2b2b;
+  transition: 0.4s;
 }
 
 .project-card:hover img {
