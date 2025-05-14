@@ -212,10 +212,10 @@ img {
     padding: 0 0 5rem;
     height: 100vh;
   }
-  .flex__style {
+  /* .flex__style {
     display: flex;
     height: 100%;
-  }
+  } */
   .home__img {
     transform: translateY(-65%);
   }
@@ -572,11 +572,11 @@ img {
 }
 
 .tech-stack-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin: 2rem 0;
   justify-content: center;
-  height: 70vh;
 }
 
 @keyframes floatUp {
@@ -591,21 +591,19 @@ img {
 }
 
 .tech-item {
-  width: 12rem;
+  width: 9rem;
   height: 4rem;
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 0.75rem;
-  padding: 0 1rem;
+  padding: 0 0 0 0.3rem;
   margin: 1rem;
   background-color: #f9fafb;
   border-radius: 0.5rem;
-  cursor: pointer;
-  box-sizing: border-box;
   opacity: 0;
   transform: translateY(30px);
-  transition: transform 0.3s ease, opacity 0.3s ease;  /* Consolidated transition */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .tech-item.visible {
@@ -645,6 +643,32 @@ img {
   transition: all 0.3s ease;
 }
 
+@media (min-width: 768px) {
+  .tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+  .tech-item {
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.75rem;
+    padding: 0 1rem;
+    margin: 1rem;
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform 0.3s ease, opacity 0.3s ease;  /* Consolidated transition */
+  }
+}
+
 .more-projects:hover {
   background-color: #e5e7eb;
   transform: scale(1.1);
@@ -664,9 +688,6 @@ img {
   display: block;
   transition: opacity 0.4s ease;
 }
-/* .project-card img:hover {
-  transform: scale(1.1);
-} */
 
 .project-overlay {
   position: absolute;
@@ -720,4 +741,17 @@ img {
 
 .project-card:hover .project-overlay {
   opacity: 0.8;
+}
+
+.short-text {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .full-text {
+    display: none;
+  }
+  .short-text {
+    display: block;
+  }
 }
