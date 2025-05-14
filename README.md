@@ -1,52 +1,75 @@
-# himani-mehra.github.io
-# Portfolio Project Readme
+# 💼 Personal Portfolio - Himani Mehra
 
-## Introduction
+A modern, responsive, and professional portfolio website to showcase my projects, skills, experience, and background as a Frontend Developer. Built to reflect my identity, values, and journey in tech, this site serves as a single destination for recruiters and collaborators to know me better.
 
-This repository contains the source code for a personal portfolio project created by Himani Mehra. The portfolio showcases various web development projects and provides information about the developer.
+---
 
-## Table of Contents
+## 🚀 Overview
 
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
+I created this portfolio to centralize everything about me—my projects, my story, my skillset, and how to reach out. The main goal was not just to build another personal site but to design something that feels uniquely mine while being practical, informative, and easy to navigate for hiring managers and collaborators.
 
-## Project Overview
+---
 
-### HTML
+## 🎯 Key Features
 
-The project's HTML structure consists of two main sections - the home section and the work section. The home section includes a welcome message, social media links, and an animated blob with an image. The work section displays a list of projects with images, each linking to a corresponding live project on GitHub Pages.
+- ✅ **Clean, modern UI** with dark/light theme toggle
+- 📱 **Responsive Design** (Mobile, Tablet, and Desktop friendly)
+- 💡 **Project Showcase** with code and live demo links
+- 🧠 **Skill Badges** showing tech stack proficiency
+- 📄 **Downloadable Resume** option
+- 🔗 **Integrated social links** (GitHub, LinkedIn, Medium, etc.)
+- 🎯 Built with **HTML5 + CSS3 + Vanilla JS** (No framework dependencies)
 
-### JavaScript
+---
 
-The JavaScript file (`main.js`) is responsible for handling navigation interactions, revealing content with scroll animations using the ScrollReveal library, and managing the visibility of the scroll-down arrow.
+## 🛠️ Tech Stack
 
-## Technologies Used
+| Category        | Technologies Used                     |
+|----------------|----------------------------------------|
+| Structure       | HTML5                                 |
+| Styling         | CSS3, Custom Variables                |
+| Interactions    | JavaScript (Vanilla)                  |
+| Icons           | Boxicons                              |
+| Fonts           | Google Fonts                          |
+| Hosting         | GitHub Pages                          |
 
-- HTML5
-- CSS3
-- JavaScript
-- ScrollReveal Library
-- Boxicons
-- Google Fonts
+---
 
-## Project Structure
+## 📸 Screenshots
 
-- **index.html**: The main HTML file containing the structure of the portfolio.
-- **assets/**
-  - **css/styles.css**: The stylesheet for styling the HTML.
-  - **img/**: Contains images used in the project.
-  - **js/main.js**: The JavaScript file for handling interactions and animations.
+> ![Portfolio Screenshot](assets/img/portfolio-preview.png)  
+> *Homepage showing introduction, resume link, and navigation.*
 
-## Setup and Installation
+---
 
-1. Clone the repository:
+## 🧠 Thought Process
+
+> *“A portfolio should not just be a site. It should reflect your clarity, confidence, and creativity.”*
+
+While building this site, I kept recruiters in mind. Here's what I focused on:
+
+- **Readability & Flow:** I prioritized simplicity and scannability over flashiness.
+- **Highlighting Projects with Purpose:** Each project has a clear description and tech stack so that hiring managers get context without needing to ask.
+- **Minimal Dependencies:** I kept it lightweight and framework-free to ensure fast load times and maximum compatibility.
+
+---
+
+## 📂 Folder Structure
+
+├── index.html
+├── assets/
+│ ├── css/
+│ ├── js/
+│ ├── img/
+│ └── resume/
+├── README.md
+
+
+
+
+## 🧪 How to Run Locally
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/himani-mehra/portfolio.git
+cd portfolio
+open index.html
