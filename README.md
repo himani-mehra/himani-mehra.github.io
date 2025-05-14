@@ -37,7 +37,8 @@ I created this portfolio to centralize everything about me—my projects, my sto
 
 ## 📸 Screenshots
 
-> ![Portfolio Screenshot](assets/img/portfolio-preview.png)  
+> <img width="1121" alt="Screenshot 2025-05-14 at 10 09 10 PM" src="https://github.com/user-attachments/assets/00a91777-598c-4b16-b5ac-fd98c0107736" />
+
 > *Homepage showing introduction, resume link, and navigation.*
 
 ---
