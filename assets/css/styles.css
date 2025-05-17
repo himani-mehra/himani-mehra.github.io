@@ -296,11 +296,11 @@ img {
 
 
 .home__blob-img {
-  width: 480px;
+  width: 501px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-11%, -19%);
+  top: 29%;
+  left: 22%;
+  transform: translate(-10%, -27%);
 }
 
 .button {
